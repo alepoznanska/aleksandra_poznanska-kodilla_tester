@@ -18,9 +18,6 @@ public class Switch {
                 default:
                     System.out.println("Cannot find a color which starts with this letter, plese choose another letter.");
             }
-
-
-
         }
     }
     public static void main(String[] args) {
