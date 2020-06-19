@@ -13,4 +13,5 @@ public class MainExtended {
         System.out.println(bloodType);
         System.out.println(hasBlueEyes);
     }
+
 }

@@ -6,10 +6,16 @@ public class SimpleArray {
         friends[2] = "Basia";
         friends[3] = "Delia";
         friends[4] = "Ola";
-        String friend = friends[3];
-        System.out.println(friend);
+        String bestFriend = friends[3];
+        System.out.println("My best friend is " + bestFriend);
         int numberOfElements = friends.length;
         System.out.println("Moja tablica zawiera " + numberOfElements + " elementów.");
-
+        for (int i = 0; i <= 5; i++) {
+            System.out.println(i);
+        }
+        String[] movies = new String[] {"Harry Potter", "Lord of the Rings", "Forrest Gump", "xyz"};
+        int numberOfElementsInMovies = movies.length;
+        System.out.println(numberOfElementsInMovies);
     }
+
 }

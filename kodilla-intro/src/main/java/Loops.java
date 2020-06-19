@@ -3,7 +3,7 @@ public class Loops {
         for (int i = 0; i <= 10; i++) {
             System.out.println(i);
         }
-        String[] names = new String[] {"Zygfryd", "Gwidon", "Florentyna"};
+        String[] names = new String[] {"Zygfryd", "Gwidon", "Florentyna", "Ewa", "Mewa"};
         int numberOfElements = names.length;
         System.out.println("Moja tablica zawiera " + numberOfElements + " elementów.");
         for (int i = 0; i < names.length; i++) {
@@ -12,6 +12,11 @@ public class Loops {
         for (int i = names.length - 1; i >= 0; i--) {
             System.out.println(names[i]);
         }
-    }
+        int i = 0;
+        while (i <= 10) {
+            System.out.println(i);
+            i++;
+        }
 
+    }
 }
