@@ -1,7 +1,9 @@
 package com.kodilla.abstracts.homework;
 
 public abstract class Shape {
-    int side; int height; int radius;
+
+    int side, height, radius;
+
     static final double PI = 3.14;
 
     public Shape(int side, int height, int radius) {

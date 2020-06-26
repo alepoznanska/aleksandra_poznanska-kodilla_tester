@@ -8,7 +8,7 @@ public class Square extends Shape {
 
     @Override
     public void giveArea() {
-        int area = side * side;
+        int area = (int) Math.pow(side, 2);
         System.out.println("Pole powierzchni kwadratu wynosi " + area);
     }
 
