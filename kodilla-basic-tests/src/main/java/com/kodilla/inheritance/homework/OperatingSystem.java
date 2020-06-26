@@ -15,12 +15,7 @@ public class OperatingSystem {
         System.out.println("Turning off...");
     }
 
-    public int getYear() {
-        return year;
-    }
-
     public void displayYearOfProduction() {
         System.out.println("Year of production: " + year);
     }
-
 }
