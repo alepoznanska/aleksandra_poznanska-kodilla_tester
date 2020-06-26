@@ -2,8 +2,8 @@ package com.kodilla.inheritance.homework;
 
 public class Windows extends OperatingSystem{
 
-    public Windows(int year) {
-        super(year);
+    public Windows() {
+        super(2010);
     }
     @Override
     public void turnOn () {

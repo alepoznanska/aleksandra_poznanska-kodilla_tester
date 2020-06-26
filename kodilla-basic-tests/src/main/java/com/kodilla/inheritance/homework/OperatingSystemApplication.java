@@ -4,9 +4,9 @@ public class OperatingSystemApplication {
     public static void main(String[] args) {
         OperatingSystem operatingSystem = new OperatingSystem(1999);
         displayInfoAboutOperatingSystem(operatingSystem);
-        Windows windows = new Windows(2010);
+        Windows windows = new Windows();
         displayInfoAboutOperatingSystem(windows);
-        Doors doors = new Doors(2020);
+        Doors doors = new Doors();
         displayInfoAboutOperatingSystem(doors);
     }
     private static void displayInfoAboutOperatingSystem(OperatingSystem operatingSystem) {
