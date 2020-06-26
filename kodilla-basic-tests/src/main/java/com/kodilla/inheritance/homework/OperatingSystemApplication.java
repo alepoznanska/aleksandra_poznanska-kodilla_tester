@@ -3,13 +3,13 @@ package com.kodilla.inheritance.homework;
 public class OperatingSystemApplication {
     public static void main(String[] args) {
         OperatingSystem operatingSystem = new OperatingSystem(1999);
-        shorter(operatingSystem);
-        OperatingSystemA operatingSystemA = new OperatingSystemA(2010);
-        shorter(operatingSystemA);
-        OperatingSystemB operatingSystemB = new OperatingSystemB(2020);
-        shorter(operatingSystemB);
+        displayInfoAboutOperatingSystem(operatingSystem);
+        Windows windows = new Windows(2010);
+        displayInfoAboutOperatingSystem(windows);
+        Doors doors = new Doors(2020);
+        displayInfoAboutOperatingSystem(doors);
     }
-    private static void shorter(OperatingSystem operatingSystem) {
+    private static void displayInfoAboutOperatingSystem(OperatingSystem operatingSystem) {
         operatingSystem.turnOn();
         operatingSystem.displayYearOfProduction();
         operatingSystem.turnOff();
