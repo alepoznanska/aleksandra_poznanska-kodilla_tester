@@ -4,14 +4,14 @@ public class Application {
 
     public static void main(String[] args) {
         Shape square = new Square();
-        shapes(square);
+        displayShapesParameters(square);
         Shape triangle = new Triangle();
-        shapes(triangle);
+        displayShapesParameters(triangle);
         Shape circle = new Circle();
-        shapes(circle);
+        displayShapesParameters(circle);
     }
 
-    private static void shapes(Shape circle) {
+    private static void displayShapesParameters(Shape circle) {
         circle.giveArea();
         circle.giveCircuit();
     }

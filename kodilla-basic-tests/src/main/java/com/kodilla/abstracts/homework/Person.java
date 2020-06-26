@@ -9,8 +9,8 @@ public class Person {
           this.firstName = firstName;
           this.age = age;
           this.job = job;
+    }
 
-       }
     public void process(Job job) {
         System.out.println("Your job responsibilities include " + job.showResponsibilities());
     }

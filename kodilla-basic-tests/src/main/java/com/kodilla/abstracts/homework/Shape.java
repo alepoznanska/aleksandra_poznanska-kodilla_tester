@@ -1,15 +1,13 @@
 package com.kodilla.abstracts.homework;
 
 public abstract class Shape {
-    int a;
-    int h;
-    int r;
+    int side; int height; int radius;
     static final double PI = 3.14;
 
-    public Shape(int a, int h, int r) {
-        this.a = a;
-        this.h = h;
-        this.r = r;
+    public Shape(int side, int height, int radius) {
+        this.side = side;
+        this.height = height;
+        this.radius = radius;
     }
 
     public abstract void giveArea();

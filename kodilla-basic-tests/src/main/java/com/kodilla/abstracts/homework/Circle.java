@@ -3,18 +3,18 @@ package com.kodilla.abstracts.homework;
 public class Circle extends Shape{
 
     public Circle() {
-        super(6, 6, 6);
+        super(0, 0, 10);
     }
 
     @Override
     public void giveArea() {
-       double area = PI * r * r;
+       double area = PI * radius * radius;
        System.out.println("Pole powierzchni koła wynosi " + area);
     }
 
     @Override
     public void giveCircuit() {
-        double circuit = 2 * PI * r;
+        double circuit = 2 * PI * radius;
         System.out.println("Obwód koła wynosi " + circuit);
     }
 }
