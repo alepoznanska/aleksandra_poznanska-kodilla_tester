@@ -13,8 +13,8 @@ public class Circle extends Shape{
     }
 
     @Override
-    public void giveCircuit() {
-        double circuit = 2 * PI * radius;
-        System.out.println("Obwód koła wynosi " + circuit);
+    public void givePerimeter() {
+        double perimeter = 2 * PI * radius;
+        System.out.println("Obwód koła wynosi " + perimeter);
     }
 }

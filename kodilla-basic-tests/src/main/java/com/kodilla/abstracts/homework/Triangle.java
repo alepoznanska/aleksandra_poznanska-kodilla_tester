@@ -13,8 +13,8 @@ public class Triangle extends Shape{
     }
 
     @Override
-    public void giveCircuit() {
-        int circuit = side * 3;
-        System.out.println("Obwód trójkąta wynosi " + circuit);
+    public void givePerimeter() {
+        int perimeter = side * 3;
+        System.out.println("Obwód trójkąta wynosi " + perimeter);
     }
 }

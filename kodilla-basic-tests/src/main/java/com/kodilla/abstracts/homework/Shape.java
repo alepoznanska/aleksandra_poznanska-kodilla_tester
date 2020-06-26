@@ -14,5 +14,5 @@ public abstract class Shape {
 
     public abstract void giveArea();
 
-    public abstract void giveCircuit();
+    public abstract void givePerimeter();
  }

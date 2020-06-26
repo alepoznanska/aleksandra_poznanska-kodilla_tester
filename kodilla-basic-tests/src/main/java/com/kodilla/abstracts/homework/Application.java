@@ -13,6 +13,6 @@ public class Application {
 
     private static void displayShapesParameters(Shape circle) {
         circle.giveArea();
-        circle.giveCircuit();
+        circle.givePerimeter();
     }
 }
