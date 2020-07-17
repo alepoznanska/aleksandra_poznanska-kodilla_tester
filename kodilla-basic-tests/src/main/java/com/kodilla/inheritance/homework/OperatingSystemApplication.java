@@ -4,14 +4,14 @@ public class OperatingSystemApplication {
 
     public static void main(String[] args) {
 
-    OperatingSystem operatingSystem = new OperatingSystem(1999);
-    displayInfoAboutOperatingSystem(operatingSystem);
+        OperatingSystem operatingSystem = new OperatingSystem(1999);
+        displayInfoAboutOperatingSystem(operatingSystem);
 
-    Windows windows = new Windows();
-    displayInfoAboutOperatingSystem(windows);
+        Windows windows = new Windows();
+        displayInfoAboutOperatingSystem(windows);
 
-    Doors doors = new Doors();
-    displayInfoAboutOperatingSystem(doors);
+        Doors doors = new Doors();
+        displayInfoAboutOperatingSystem(doors);
  }
 
     private static void displayInfoAboutOperatingSystem(OperatingSystem operatingSystem) {
