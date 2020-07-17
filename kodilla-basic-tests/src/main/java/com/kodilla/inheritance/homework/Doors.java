@@ -5,6 +5,7 @@ public class Doors extends OperatingSystem {
     public Doors() {
         super(2052);
     }
+
     @Override
     public void turnOn (){
         System.out.println("Turning Doors on...");
