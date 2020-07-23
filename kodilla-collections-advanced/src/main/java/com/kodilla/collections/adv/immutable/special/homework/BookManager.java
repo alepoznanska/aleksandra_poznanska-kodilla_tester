@@ -4,21 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookManager {
+    List<Book> books = new ArrayList<>();
+
     public Book createBook(String title, String author) {
-        Book book = new Book(title, author);
-        System.out.println("-----------------------------------------------------");
-        List<Book> books = new ArrayList<>();
-        books.add(book);
-        Book anotherBook = new Book("bla", "bla");
-        System.out.println("Dane książki: " + book.getTitle() + " " + book.getAuthor());
-        for (Book newBook : books) {
-            if (anotherBook.equals(book)) {
-                System.out.println("The book you are tryinjg to add is already on the list");
-            } else {
-                System.out.println("The book you are trying to add is not on the list");
-                return book;
-            }
+        return new Book(title, author);
+    }
+
+    public List<Book> createBookList(Book book) {
+        if(!books.contains(book)){
+            System.out.println(book.getTitle() + " by " + book.getAuthor() + ": this book is not on the list yet, let's add it!");
+            books.add(book);} else {
+            System.out.println("This book is already on the list, cannot add it");
         }
-    return null;
+        return books;
     }
 }

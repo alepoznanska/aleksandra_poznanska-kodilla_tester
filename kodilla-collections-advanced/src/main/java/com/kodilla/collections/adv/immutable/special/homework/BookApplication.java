@@ -1,15 +1,20 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BookApplication {
     public static void main(String[] args) {
-        BookManager book1 = new BookManager();
-        book1.createBook("tytuł", "autor");
-        BookManager book2 = new BookManager();
-        book2.createBook("tytuł", "autor");
-        BookManager book3 = new BookManager();
-        book3.createBook("bla", "bla");
+        BookManager createBook = new BookManager();
+        List<Book> books = new ArrayList<>();
+        books.add(createBook.createBook("Harry Potter And The Sorcerer's Stone", "J.K.Rowling"));
+        books.add(createBook.createBook("Harry Potter And The Sorcerer's Stone", "J.K.Rowling"));
+        books.add(createBook.createBook("Harry Potter And The Sorcerer's Stone", "J.K.Rowling"));
 
-        System.out.println(book1 == book2);
-        System.out.println(book1.equals(book2));
+        for (Book book : books) {
+            createBook.createBookList(book);
+        }
+
+        System.out.println(createBook.books.size());
     }
 }
