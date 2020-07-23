@@ -1,16 +1,19 @@
 package com.kodilla.abstracts.homework;
 
 public class JobApplication {
-
     public static void main(String[] args) {
+        Actor actor = new Actor(55000, "acting");
+        Professor professor = new Professor(12000, "teaching");
+        Plumber plumber = new Plumber(7000, "fixing toilets and sinks");
 
-        Person adam = new Person("Adam", 55, "Plumber");
-        Job plumber = new Plumber();
-        Job actor = new Actor();
-        Job professor = new Professor();
+        Person[] person = new Person[3];
 
-        adam.process(plumber);
-        adam.process(actor);
-        adam.process(professor);
+        person[0] = new Person("Adam", 29, actor);
+        person[1] = new Person("Henry", 55, professor);
+        person[2] = new Person("Scott", 44, plumber);
+
+        for (int i = 0; i < person.length; i++){
+            person[i].showPersonDetails();
+        }
     }
 }

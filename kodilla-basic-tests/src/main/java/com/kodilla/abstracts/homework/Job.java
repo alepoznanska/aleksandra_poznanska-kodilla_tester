@@ -8,7 +8,12 @@ public abstract class Job {
         this.salary = salary;
         this.responsibilities = responsibilities;
     }
+
     public String showResponsibilities() {
         return responsibilities;
+    }
+
+    public int showSalary() {
+        return salary;
     }
 }

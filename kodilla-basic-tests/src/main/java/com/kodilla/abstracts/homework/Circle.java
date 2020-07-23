@@ -1,20 +1,23 @@
 package com.kodilla.abstracts.homework;
 
-public class Circle extends Shape{
+public class Circle extends Shape {
+    private int radius;
 
-    public Circle() {
-        super(0, 0, 10);
+    public Circle(int radius) {
+        this.radius = radius;
     }
 
     @Override
-    public void giveArea() {
-       double area = PI * radius * radius;
-       System.out.println("Pole powierzchni koła wynosi " + area);
+    public double giveSurfaceArea() {
+       surfaceArea = Math.PI * radius * radius;
+       System.out.println("Pole powierzchni koła wynosi " + surfaceArea);
+        return surfaceArea;
     }
 
     @Override
-    public void givePerimeter() {
-        double perimeter = 2 * PI * radius;
+    public double givePerimeter () {
+        perimeter = 2 * Math.PI * radius;
         System.out.println("Obwód koła wynosi " + perimeter);
+        return perimeter;
     }
 }
