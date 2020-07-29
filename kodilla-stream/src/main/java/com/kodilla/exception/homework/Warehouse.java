@@ -2,26 +2,22 @@ package com.kodilla.exception.homework;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Warehouse {
     private  static List<Order> listOfOrders = new ArrayList<>();
 
-    public void addOrder(Order order) {
+    public void addOrder(String orderNumber) {
+        Order order = new Order(orderNumber);
         listOfOrders.add(order);
     }
 
     public Order getOrder(String number) throws OrderDoesntExistException {
-        List<Order> orders = listOfOrders
+        return listOfOrders
                 .stream()
                 .filter(o -> o.getNumber().equals(number))
-                .map(Warehouse::getOrderNumber)
-                .collect(Collectors.toList());
-
-        if (orders.isEmpty())
-            throw new OrderDoesntExistException();
-        else
-            return getOrderNumber(new Order(number));
+                .findFirst().orElseThrow(OrderDoesntExistException::new);
+                //.findFirst().orElseThrow(()-> new OrderDoesntExistException());
+                //.findFirst().orElseThrow(()-> new Exception("this is an exception"));
     }
 
     public static Order getOrderNumber(Order order) {

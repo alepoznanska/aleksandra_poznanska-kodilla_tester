@@ -3,13 +3,11 @@ package com.kodilla.exception.homework;
 import java.util.Scanner;
 
 public class WarehouseApp {
-    public static void main(String[] args) throws OrderDoesntExistException {
+    public static void main(String[] args) {
         Warehouse warehouse = new Warehouse();
-        warehouse.addOrder(new Order("1"));
-        warehouse.addOrder(new Order("2"));
-        warehouse.addOrder(new Order("3"));
-        warehouse.addOrder(new Order("4"));
-        warehouse.addOrder(new Order("13"));
+        warehouse.addOrder("1");
+        warehouse.addOrder("2");
+        warehouse.addOrder("3");
 
         Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the number of your order");
