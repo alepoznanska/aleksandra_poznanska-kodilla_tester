@@ -20,7 +20,7 @@ class UserValidatorTestSuite {
 
     @ParameterizedTest
     @EmptySource
-    @ValueSource(strings = {"", " ", "ab", "a b", "#", ","})
+    @ValueSource(strings = {" ", "ab", "a b", "#", ","})
     public void username_shouldReturnFalseIfNotEnoughCharactersOrNotAllowed(String username) {
         assertFalse(validator.validateUsername(username));
     }
