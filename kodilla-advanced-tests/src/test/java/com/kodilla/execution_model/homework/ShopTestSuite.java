@@ -33,7 +33,7 @@ class ShopTestSuite {
         //When
        Order getIndex2 = shoppingList.getOrder(2);
        //Then
-        assertEquals(999, getIndex2.getOrderValue());
+        assertEquals(999, getIndex2.getOrderValue(), 0.01);
         assertEquals(LocalDate.of(2020, 1, 31), getIndex2.getDate());
         assertEquals("Filip", getIndex2.getLogin());
     }
