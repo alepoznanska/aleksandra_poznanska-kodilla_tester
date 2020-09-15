@@ -80,10 +80,10 @@ class WeatherAlertServiceTestSuite {
         weatherAlertService.sendWeatherAlert(location2);
         weatherAlertService.sendWeatherAlert(location3);
 
-        Mockito.verify(subscriber1, Mockito.never()).receiveWeatherAlert(location3);
-        Mockito.verify(subscriber2, Mockito.never()).receiveWeatherAlert(location3);
-        Mockito.verify(subscriber1, Mockito.never()).receiveWeatherAlert(location2);
-        Mockito.verify(subscriber2, Mockito.never()).receiveWeatherAlert(location2);
+        Mockito.verify(subscriber1, Mockito.times(1)).receiveWeatherAlert(location3);
+        Mockito.verify(subscriber2, Mockito.times(1)).receiveWeatherAlert(location3);
+        Mockito.verify(subscriber1, Mockito.times(1)).receiveWeatherAlert(location2);
+        Mockito.verify(subscriber2, Mockito.times(1)).receiveWeatherAlert(location2);
     }
 
     @Test

@@ -8,7 +8,10 @@ public class WeatherAlertService {
     private Map<Subscriber, Set<Location>> subscribersInLocations = new HashMap<>();
 
     public void addSubscriberToLocation(Subscriber subscriber, Location location) {
-        if (this.subscribersInLocations.containsKey(subscriber)) {
+
+//        subscribersInLocations.computeIfAbsent(subscriber, k -> new HashSet<>()).add(location);
+
+            if (this.subscribersInLocations.containsKey(subscriber)) {
             subscribersInLocations.get(subscriber).add(location);
         } else {
             locations.add(location);
