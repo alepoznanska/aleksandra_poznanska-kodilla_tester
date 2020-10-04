@@ -17,11 +17,12 @@ public class AllegroTestingApp {
         Select choseCategory = new Select(category);
         choseCategory.selectByIndex(3);
 
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
+        WebElement alertBoxButton = driver.findElement(By.xpath("//div[@aria-labelledby=\"dialog-title\"]/div[2]//button[@data-role=\"accept-consent\"]"));
+        alertBoxButton.click(); // close popup window
 
         WebElement inputField = driver.findElement(By.xpath("/html/body/div[3]/div[2]/header/div/div/div/div/form/input"));
         inputField.sendKeys("Mavic mini");
         inputField.submit();
+
     }
 }
