@@ -18,7 +18,7 @@ public class AllegroTestingApp {
         choseCategory.selectByIndex(3);
 
         WebElement alertBoxButton = driver.findElement(By.xpath("//div[@aria-labelledby=\"dialog-title\"]/div[2]//button[@data-role=\"accept-consent\"]"));
-        alertBoxButton.click(); // close popup window
+        alertBoxButton.click();
 
         WebElement inputField = driver.findElement(By.xpath("/html/body/div[3]/div[2]/header/div/div/div/div/form/input"));
         inputField.sendKeys("Mavic mini");
