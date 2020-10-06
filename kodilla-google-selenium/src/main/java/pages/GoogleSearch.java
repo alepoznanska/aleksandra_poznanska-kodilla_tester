@@ -10,10 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public class GoogleSearch extends AbstractPage {
-    @FindBy(css = "input[title='Szukaj']")
+    @FindBy(css = "input[title='Search']")
     static WebElement inputField;
 
-    @FindBy(css = "input[value='Szukaj w Google']")
+    @FindBy(css = "input[value='Google Search']")
     static List<WebElement> searchButton;
     private static GoogleResults googleResults;
 
