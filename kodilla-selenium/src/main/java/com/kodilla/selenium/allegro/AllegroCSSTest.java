@@ -25,5 +25,12 @@ public class AllegroCSSTest {
         inputField.sendKeys("Mavic mini");
         inputField.submit();
 
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("section > article:nth-child(1)")));
+
+        List<WebElement> productCards = driver.findElements(By.cssSelector("._9c44d_378hD > section > article"));
+        for (WebElement products : productCards) {
+            products.getText();
+        }
     }
 }
